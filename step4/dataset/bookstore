@@ -1,0 +1,24 @@
+drop table if exists bookstore;
+
+create table bookstore
+(bookname varchar(100), 
+author char(25),
+isbn int, 
+copies_sold int, 
+copies_available int, 
+cost_price int,
+selling_price int,
+genre char(10));
+
+
+insert into bookstore values('Thinking in Java', 'Bruce Eckel', 12345, 12, 15, 1500, 2400, 'Technical'),
+('Harry Potter', 'J.K.Rowling', 789, 1000, 0, 300, 700, 'Fiction'),
+('Hogwarts- A History', 'J.K.Rowling', 4656, 0, 1000, 700, 1000, 'Fiction'),
+('If tomorrow comes', 'Shidney Sheldon', 1987, 5000, 100, 300, 450, 'Thriller'),
+('Thinking in C++', 'Bruce Eckel', 1234, 10, 5, 500, 1000, 'Technical'),
+('Angels and demons', 'Dan Brown', 768, 2000, 1000, 600, 800, 'Thriller'),
+('The notebook', 'Nicholas Sparks', 876, 5000, 100, 450, 660, 'Romance'),
+('Javascript - The good parts', 'Douglas Crockford', 452, 50000, 3000, 700, 700, 'Technical'),
+('The Fountainhead', 'Ayn Rand', 8765, 10000, 6000, 2500, 4000, 'Fiction');
+
+select * from bookstore;
